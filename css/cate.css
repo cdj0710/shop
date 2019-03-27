@@ -1,0 +1,40 @@
+.cate_one {
+  width: 90px;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+.cate_one ul {
+  width: 100%;
+}
+.cate_one ul li {
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.cate_one ul li a {
+  width: 100%;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+.cate_one ul li.active {
+  border-right-color: white;
+  background-color: white;
+}
+.cate_two {
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+  background-color: white;
+}
+.cate_two .cate_item {
+  width: 33.33%;
+  padding: 10px;
+  text-align: center;
+}
+.cate_two .cate_item img {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}

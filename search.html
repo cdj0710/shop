@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>my</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./lib/fa/css/font-awesome.css">
+    <link rel="stylesheet" href="css/comment.css">
+    <link rel="stylesheet" href="css/search.css">
+</head>
+
+<body>
+    <div class="lt">
+        <!-- 头部 -->
+        <div class="lt-header">
+            <a href="javascript:history.go(-1)" class="mui-pull-left">
+                <span class="fa fa-chevron-left"></span>
+            </a>
+            <a class="mui-pull-right ">
+                <span class=""></span>
+            </a>
+            <h4 class="hd_text">搜索中心</h4>
+        </div>
+        <!-- 主要内容 -->
+        <div class="lt-body">
+            <div class="move_body">
+                <!-- 搜索头部 -->
+                <div class="top">
+                    <input type="text" placeholder="请输入关键字">
+                    <button class="mui-btn mui-btn-primary">搜索</button>
+                </div>
+                <div class="main">
+                    <!-- 历史模板 -->
+                </div>
+
+            </div>
+        </div>
+        <!-- 底部 -->
+        <div class="lt-footer">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <span class="fa fa-home"></span>
+                        <p>首页</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="cate.html">
+                        <span class="fa fa-bars"></span>
+                        <p>分类页</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="cart.html" class="active">
+                        <span class="fa fa-shopping-cart"></span>
+                        <p>购物车</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user.html">
+                        <span class="fa fa-user"></span>
+                        <p>用户中心</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 模板 -->
+    <script type="text/html" id="temp">
+        <!-- 模板 -->
+        {{if arr.length != 0}}
+        <p class="mui-clearfix">
+                <a class="mui-pull-left" > 搜索历史</a>
+                <a href="javascript:;" class="mui-pull-right clear_btn" >清空记录</a>
+        </p>
+        {{/if}}
+
+        {{each arr v i}}
+        <div class="item">
+            <a href="#" class="mui-pull-right remove" data-idx="{{i}}">
+                <span class="btn_delete  mui-icon mui-icon-closeempty"></span>
+            </a>
+            <a href="#" class="txt">{{v}}</a>
+        </div>
+        {{/each}}
+    </script>
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./lib/mui/js/mui.js"></script>
+    <script src="./js/search.js"></script>
+
+</body>
+
+</html>

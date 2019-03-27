@@ -1,0 +1,15 @@
+
+.move_body .main{
+    padding: 10px;
+}
+.move_body .main .item{
+    border-left: 1px dashed red;
+    border-right: 1px dashed red;
+    border-bottom: 1px dashed red;
+
+    padding: 3px;
+    font-size: 14px;
+}
+.move_body .main .item:nth-child(2){
+    border-top: 1px dashed red;
+}

@@ -1,0 +1,13 @@
+.move_body {
+  padding: 10px;
+}
+.move_body > div {
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+.move_body > div button {
+  width: 100%;
+}
+.move_body .mess_text {
+  padding-left: 20px;
+}

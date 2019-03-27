@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>my</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./lib/fa/css/font-awesome.css">
+    <link rel="stylesheet" href="css/comment.css">
+    <link rel="stylesheet" href="css/user.css">
+</head>
+
+<body>
+    <div class="lt">
+        <!-- 头部 -->
+        <div class="lt-header">
+            <a href="javascript:history.go(-1)" class="mui-pull-left">
+                <span class="fa fa-chevron-left"></span>
+            </a>
+            <a class="mui-pull-right ">
+                <span class=""></span>
+            </a>
+            <h4 class="hd_text">会员中心</h4>
+        </div>
+        <!-- 主要内容 -->
+        <div class="lt-body">
+            <div class="move_body">
+                <!-- 信息 -->
+                    
+
+            </div>
+        </div>
+        <!-- 底部 -->
+        <div class="lt-footer">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <span class="fa fa-home"></span>
+                        <p>首页</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="cate.html">
+                        <span class="fa fa-bars"></span>
+                        <p>分类页</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="cart.html">
+                        <span class="fa fa-shopping-cart"></span>
+                        <p>购物车</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user.html" class="active">
+                        <span class="fa fa-user"></span>
+                        <p>用户中心</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/html" id="user">
+        <div class="mess mui-clearfix">
+            <img src="images/user.jpg" alt="" width="40" class="mui-pull-left">
+            <div class="mess_text mui-pull-left">
+                <h5>账号名: {{username}}</h5>
+                <h6>绑定手机: {{mobile}}</h6>
+            </div>
+        </div>
+            <!-- 安全 -->
+            <div class="safe"> <a>账号和安全 <span class="mui-pull-right fa fa-angle-right"></span></a></div>
+            <!-- 购物车 -->
+            <div class="cart"><a>我的购物车 <span class="mui-pull-right fa fa-angle-right"></span></a></div>
+            <!-- 地址管理 -->
+            <!-- 退出 -->
+            <div><button>退出</button></div>
+    </script>
+
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./lib/mui/js/mui.js"></script>
+    <script src="js/commet.js"></script>
+    <script src="js/user.js"></script>
+
+
+
+
+</body>
+
+</html>

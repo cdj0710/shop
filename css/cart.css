@@ -1,0 +1,20 @@
+.cart_item{
+    width: 100%;
+    padding: 10px;
+}
+.cart_item .cont{
+    height: 100%;
+    overflow: hidden;
+}
+.cart_item .count{
+    font-size: 14px;
+}
+.cart_item .cont span{
+    font-size: 14px;
+}
+.cart_item .cont span:nth-child(2){
+    color: red;
+}
+.cart_item .cont span:nth-child(3){
+    text-decoration: line-through;
+}
